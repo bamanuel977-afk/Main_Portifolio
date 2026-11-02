@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>AI Lab | Big Aman</title>
+    <meta
+      name="description"
+      content="Portfolio of Big Aman: developer and WKU student from Ethiopia, growing into AI engineering."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bgfx"><i></i><i></i><i></i><canvas id="bgc"></canvas></div>
+    <div id="dot"></div>
+    <div id="toast"></div>
+    <nav>
+      <a class="logo" href="index.html"
+        ><img src="images/aman-1.jpg" alt="" /><b>Big Aman</b
+        ><small>Open to work</small></a
+      >
+      <div class="nl">
+        <a href="index.html#work">Work</a><a href="index.html#lab">Lab</a
+        ><a href="index.html#github">GitHub</a
+        ><a href="index.html#about">About</a><a href="ai.html">AI Lab</a
+        ><a href="index.html#contact">Contact</a>
+      </div>
+      <div class="nr">
+        <span>Addis <b id="clock">--:--</b></span
+        ><a class="pill" href="mailto:bamanuel977@gmail.com">Let’s talk ↗</a>
+      </div>
+    </nav>
+    <main id="v-ai">
+      <section id="aitop">
+        <div class="take">
+          <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+            <path d="M0 90V40C240 0 480 80 720 40S1200 0 1440 40V90Z" />
+          </svg>
+          <h2 class="sc">AI LAB</h2>
+        </div>
+        <div class="wrap">
+          <div class="sec">
+            <h3>Neural network playground</h3>
+            <p>
+              A real neural network (2 inputs, 8 hidden neurons) training live
+              in your browser. Click the canvas to add points, pick a pattern,
+              and watch it learn the boundary.
+            </p>
+            <div class="pg">
+              <canvas id="nn" width="480" height="480"></canvas>
+              <div>
+                <div class="mt">
+                  <div><b id="ep">0</b><span>epochs</span></div>
+                  <div><b id="ls">–</b><span>loss</span></div>
+                  <div><b id="ac">–</b><span>accuracy</span></div>
+                </div>
+                <div class="ctl" id="ctl">
+                  <button data-a="A">Add pink points</button
+                  ><button data-a="B" class="on">Add blue points</button
+                  ><button data-a="train">Pause training</button
+                  ><button data-a="clear">Clear</button>
+                </div>
+                <div class="ctl" id="pre">
+                  <button data-a="circles">Circles</button
+                  ><button data-a="xor">XOR</button
+                  ><button data-a="blobs">Two blobs</button>
+                </div>
+                <p style="color: var(--mute); font-size: 15px">
+                  Try XOR: a single neuron can’t solve it, but a hidden layer
+                  can. This is the idea behind modern AI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sec">
+            <h3>Ask about Aman</h3>
+            <p>
+              A small rule-based assistant (a keyword demo, not a large language
+              model).
+            </p>
+            <div class="chat">
+              <div id="log"></div>
+              <div class="sug" id="sug">
+                <button>What are his skills?</button
+                ><button>Show projects</button><button>AI plans?</button
+                ><button>How to contact?</button>
+              </div>
+              <input
+                id="q"
+                placeholder="Type a question and press Enter"
+                aria-label="Ask a question"
+              />
+            </div>
+          </div>
+          <div class="sec tk">
+            <h3>My AI learning tracker</h3>
+            <p>Tick what I have learned. Your browser remembers it.</p>
+            <div class="pb"><i id="pf"></i></div>
+            <b id="pp"></b>
+            <div id="tk"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Big Aman ·bamanuel977@gmail.com</footer>
+    <script src="js/main.js"></script>
+    <script src="js/ai.js"></script>
+  </body>
+</html>
