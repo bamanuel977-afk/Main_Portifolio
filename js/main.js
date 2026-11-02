@@ -15,10 +15,10 @@ const WORK = [
     "BE-Family_Hotel",
   ],
   [
-    "Shoe’s Market",
+    "Nike_Shoes_Market",
     "HTML · CSS",
-    "An online shoe store front with a product grid and store-style layout. A lesson in spacing and visual hierarchy.",
-    "-Shoe-s-Market",
+    " A modern online shoe marketplace featuring product browsing,shopping cart, search, category filtering, wishlist, and a,responsive shopping experience.",
+    "NiKE_Shoes_Market",
   ],
   [
     "Portfolio v1",
